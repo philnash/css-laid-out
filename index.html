@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS Laid Out - Phil Nash</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="./shower/themes/phil/styles/screen.css">
+	<link rel="stylesheet" href="./shower/themes/phil/styles/print.css" media="print">
+	<style type="text/css">
+	.businesscard{
+		width:400px;
+		height:200px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	}
+	.businesscard .image{
+		float:left;
+	}
+	.businesscard .details{
+		float:left;
+		width:180px;
+		padding:80px 0 0 0;
+		font-family: 'Gill Sans', sans-serif;
+	}
+	.businesscard .details p{
+		margin-bottom:0;
+		font-size:20px;
+		line-height: 1.2;
+	}
+	.businesscard .details p a{
+		border:none;
+		color:#5e6062;
+	}
+	.businesscard .details p a.mint{
+		text-transform: uppercase;
+	}
+	.businesscard .details p a span{
+		font-weight: lighter;
+	}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>CSS Laid Out</h1>
+		<p><a href="http://twitter.com/philnash">Phil Nash</a></p>
+	</header>
+	<section class="slide cover shout h"><div>
+		<h2 style="background:#fff; line-height:1.2; color: #000;">
+			CSS Laid Out
+		</h2>
+		<img src="./images/css.png" style="opacity:0.5;">
+	</div></section>
+	<section class="slide shout"><div>
+		<h2>Hello</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Who am I?</h2>
+		<div class="businesscard place m">
+			<div class="image">
+				<img src="./images/phil.png">
+			</div>
+			<div class="details">
+				<p><a href="http://mintdigital.com/phil">Phil Nash</a></p>
+				<p style="margin-bottom:3em; font-size:16px;"><a href="http://twitter.com/philnash">@philnash</a></p>
+				<p><a class="mint" href="http://mintdigital.com/"><span>Mint</span>Digital</a></p>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2 style="font-size:130px;">I am not a designer</h2>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>CSS Laid Out</h2>
+	</div></section>
+	<section class="slide cover shout w"><div>
+		<h2 style="background:#fff; line-height:1.2; opacity:0.8;">
+			Tables
+		</h2>
+		<img src="./images/tables.jpg">
+	</div></section>
+	<section class="slide cover shout h"><div>
+		<img src="./images/bacon.jpg">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Modern CSS layout methods</h2>
+		<ul>
+			<li class="next">Floats</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Floats</h2>
+
+		<div class="place m" style="width:600px;">
+			<img src="./images/fatcat.jpg" style="float:left; margin: 0 20px 10px 0; box-shadow: 0 0 10px rgba(0,0,0,0.8);">
+			<p style="line-height:1.5">All we really wanted to do with floats was have our text flow around images. Probably images of cats, since we're on the Internet. This cat, for example, is pretty fat. He looks lazy too, but he doesn't care. Being a cat is a good life if you can get it. Purrrrfect.</p>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Modern CSS layout methods</h2>
+		<ul>
+			<li>Floats</li>
+			<li class="next">Tables</li>
+			<li class="next">Flexbox</li>
+			<li class="next">Grids</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover shout w"><div>
+		<h2 style="background:#fff; line-height:1.2; top:65%; opacity:0.8">
+			Floats
+		</h2>
+		<img src="./images/float.jpg">
+	</div></section>
+
+	<section class="slide cover h"><div>
+		<img src="./images/bootstrap.png">
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="./examples/float.html">Demo</a></h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="./images/responsive.gif" class="place m">
+	</div></section>
+
+	<section class="slide cover shout w"><div>
+		<h2 style="background:#fff; line-height:1.2; opacity:0.8;">
+			Tables
+		</h2>
+		<img src="./images/tables.jpg">
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>
+			display:table
+		</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="./images/caniusetableshort.png" class="place m">
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="./images/caniusetablelong.png" class="place m">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>display:table</h2>
+
+<pre><code>display:table;
+display:table-row;
+display:table-cell;
+</code></pre>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="./examples/table.html">Demo</a></h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Issues</h2>
+		<ul>
+			<li class="next">Divs that look like tables</li>
+			<li class="next">Different behaviours of table cells</li>
+			<li class="next">Tables aren't very responsive</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Further reading</h2>
+		<p><a href="http://www.digital-web.com/articles/everything_you_know_about_CSS_Is_wrong/">Everything you know about CSS is wrong</a> &mdash; Rachel Andrew</p>
+	</div></section>
+
+	<section class="slide cover shout h"><div>
+		<h2 style="background:#fff; line-height:1.2; margin-top: 100px; opacity:0.8">
+			Flexbox
+		</h2>
+		<img src="./images/flex.jpg">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Flexbox</h2>
+
+<pre><code>.container{</code>
+<code>	display:flex;</code>
+<code>}</code>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Flexbox</h2>
+
+<pre><code>.container{</code>
+<code>	display:flex;</code>
+<code>	flex-direction:row / row-reverse /
+				   column / column-reverse;</code>
+<code>}</code>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Flexbox</h2>
+
+<pre><code>.container{</code>
+<code>	display:flex;</code>
+<code>	justify-content: flex-start / flex-end / center /
+					 space-around / space-between;</code>
+<code>}</code>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Flexbox</h2>
+
+<pre><code>.container{</code>
+<code>	display:flex;</code>
+<code>	align-items: flex-start / flex-end / center /
+					 baseline / stretch;</code>
+<code>}</code>
+
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="./examples/flex.html">Demo</a></h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="./images/caniuseflex.png" class="place m">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Further reading</h2>
+		<ul>
+			<li><a href="http://www.12devsofxmas.co.uk/post/2013-01-02-day-8-getting-boxfresh-with-flexbox">Getting Boxfresh with Flexbox</a> &mdash; Anthony Killeen</li>
+			<li><a href="http://dev.opera.com/articles/view/flexbox-basics/">Flexbox — fast track to layout nirvana?</a> &mdash; Chris Mills</li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_flexible_boxes">Using CSS flexible boxes</a> &mdash; MDN</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover shout w"><div>
+		<h2 style="background:#fff; line-height:1.2; opacity:0.8">
+			Grids
+		</h2>
+		<img src="./images/grid.jpg">
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="./images/caniusegrid.png" class="place m">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Grids</h2>
+
+<pre><code>.container{</code>
+<code>	display:grid;</code>
+<code>	grid-columns: 3fr 1fr;</code>
+<code>}</code>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Grids</h2>
+
+<pre><code>.container{</code>
+<code>	display:grid;</code>
+<code>	grid-columns: (3fr 1fr)[11] 3fr;</code>
+<code>}</code>
+
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Grids</h2>
+
+<pre><code>.grid-element{</code>
+<code>	grid-column:1;</code>
+<code>	grid-row:1;</code>
+<code>	grid-column-span:5;</code>
+<code>	grid-row-span: 3;</code>
+<code>}</code>
+
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="./examples/grid.html">Demo</a></h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Issues</h2>
+
+		<ul>
+			<li>Support (<em>obvs</em>)</li>
+			<li>Difficult to apply to variable lengths of items (use other techniques instead, like flexbox)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Use it now?</h2>
+
+		<p>Of course! Windows 8 apps!</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Further reading</h2>
+
+		<p><a href="http://24ways.org/2012/css3-grid-layout/">Giving Content Priority with CSS3 Grid Layout</a> &mdash; Rachel Andrew</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>What to do?</h2>
+
+		<ul>
+			<li class="next">Use display:table now! (if you like tables)</li>
+			<li class="next">Try flexbox, try grids, they are real now and they are the future</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Thank you</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Image credits</h2>
+		<ul>
+			<li>comedy_nose <a href="http://www.flickr.com/photos/comedynose/6766568985/">http://www.flickr.com/photos/comedynose/6766568985/</a></li>
+			<li>brokinhrt2 <a href="http://www.flickr.com/photos/dq090702/2836742849/">http://www.flickr.com/photos/dq090702/2836742849/</a></li>
+			<li>Ed Yourdon <a href="http://www.flickr.com/photos/yourdon/2807527198/">http://www.flickr.com/photos/yourdon/2807527198/</a></li>
+			<li>nikoretro <a href="http://www.flickr.com/photos/bellatrix6/1307790239/">http://www.flickr.com/photos/bellatrix6/1307790239/</a></li>
+			<li>jessica mullen <a href="http://www.flickr.com/photos/jessicamullen/3672695368/">http://www.flickr.com/photos/jessicamullen/3672695368/</a></li>
+			<li>puggles <a href="http://www.flickr.com/photos/puggles/2635370660/">http://www.flickr.com/photos/puggles/2635370660/</a>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<div class="businesscard place t" style="margin-top:100px;">
+			<div class="image">
+				<img src="./images/phil.png">
+			</div>
+			<div class="details">
+				<p><a href="http://mintdigital.com/phil">Phil Nash</a></p>
+				<p style="margin-bottom:3em; font-size:16px;"><a href="http://twitter.com/philnash">@philnash</a></p>
+				<p><a class="mint" href="http://mintdigital.com/"><span>Mint</span>Digital</a></p>
+			</div>
+		</div>
+		<h2 style="margin-top:300px; text-align:center;">Questions?</h2>
+	</div></section>
+
+	<script src="../../shower.js"></script>
+</body>
+</html>

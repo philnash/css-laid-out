@@ -1,0 +1,52 @@
+/* undo some bootstrap things */
+[class*="table-span"]{
+  float:none;
+  margin: 0;
+  vertical-align: top;
+  display: table-cell;
+}
+/* table layout */
+.table-container{
+  display:table;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.table-row{
+  display: table-row;
+}
+.table-span3{
+  width: 22.92817679558011%;
+}
+.table-span4{
+  width: 31.6239%;
+  padding-left: 2.564102564102564%;
+}
+.table-span4:first-child{
+  padding: 0;
+}
+.table-span9{
+  width: 74.30939226519337%;
+}
+.hero-unit{
+  margin-left: 2.7624309392265194%;
+}
+.inner-table{
+  display: table;
+  margin-left:2.7624309392265194%;
+}
+
+@media (max-width: 767px) {
+  .table-container{
+    display: block;
+  }
+  .table-row, [class*="table-span"], .inner-table{
+    display: block;
+    width: 100%;
+  }
+  .table-span4{
+    padding: 0;
+  }
+  .hero-unit, .inner-table{
+    margin: 0;
+  }
+}

@@ -1,0 +1,58 @@
+/* undo some bootstrap things */
+[class*="span"]{
+  float:none;
+  margin: 0;
+}
+
+.row-flex{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+.flex-span3{
+  width: 22.92817679558011%;
+}
+.flex-span9{
+  width: 74.30939226519337%;
+}
+.flex-span4{
+  width: 31.6239%;
+}
+
+@media (max-width: 767px) {
+  [class*="span"]{
+    width:100%;
+  }
+  .row-flex{
+    display:block;
+  }
+
+/* enable this to revers the order of the main and sidebar for this media query */
+/*
+  .row-flex{
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+  }
+
+  .row-flex .row-flex{
+    -webkit-flex-direction: column;
+  }
+  */
+
+/* alternatively, you can specify order precisely */
+/*  .row-flex{
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+  }
+  .row-flex .row-flex{
+    display: block;
+  }
+  .flex-span3{
+    -webkit-order:2;
+  }
+  .flex-span9{
+    -webkit-order:1;
+  }*/
+
+}

@@ -1,0 +1,59 @@
+.outer-grid{
+  display: -ms-grid;
+  -ms-grid-columns: (3fr 1fr)[11] 3fr;
+  -ms-grid-rows: (auto)[5];
+}
+.sidebar{
+  -ms-grid-column:1;
+  -ms-grid-row:1;
+  -ms-grid-column-span:5;
+  -ms-grid-row-span: 3;
+}
+.hero-unit{
+  -ms-grid-column:7;
+  -ms-grid-row:1;
+  -ms-grid-column-span:18;
+  -ms-grid-row-span: 1;
+}
+.story{
+  -ms-grid-column: 1;
+  -ms-grid-row:1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+.story{
+  -ms-grid-column: 7;
+  -ms-grid-row:2;
+  -ms-grid-column-span: 5;
+  -ms-grid-row-span: 1;
+}
+.story:nth-child(4){
+  -ms-grid-column: 13;
+}
+.story:nth-child(5){
+  -ms-grid-column: 19;
+}
+.story:nth-child(6){
+  -ms-grid-row: 3;
+}
+.story:nth-child(7){
+  -ms-grid-column: 13;
+  -ms-grid-row: 3;
+}
+.story:nth-child(8){
+  -ms-grid-column: 19;
+  -ms-grid-row: 3;
+}
+
+/* you can play easily with grids, for example, you can move the last story panel
+  to the top left, just by changing it's column and row as below. */
+/*.story:nth-child(8){
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}*/
+
+@media (max-width: 767px) {
+  .outer-grid{
+    display: block;
+  }
+}
