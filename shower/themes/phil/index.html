@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>CSS Laid Out - Phil Nash</title>
+	<title>CSS Laid Out</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
-	<link rel="stylesheet" href="./shower/themes/phil/styles/screen.css">
-	<link rel="stylesheet" href="./shower/themes/phil/styles/print.css" media="print">
+	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="styles/print.css" media="print">
 	<style type="text/css">
 	.businesscard{
 		width:400px;
@@ -48,6 +48,9 @@
 			CSS Laid Out
 		</h2>
 		<img src="./images/css.png" style="opacity:0.5;">
+		<footer>
+
+		</footer>
 	</div></section>
 	<section class="slide shout"><div>
 		<h2>Hello</h2>
@@ -68,25 +71,41 @@
 
 	<section class="slide shout"><div>
 		<h2 style="font-size:130px;">I am not a designer</h2>
+
+		<footer>
+			This session was tagged webdesign, but I am not a designer, let's get that out the way now. I am a front end developer, I get tasked with taking our designer's ideas and making them real. And I am interested in the best ways to do it.
+		</footer>
 	</div></section>
 
 	<section class="slide shout"><div>
 		<h2>CSS Laid Out</h2>
+
+		<footer>So what do I mean by CSS laid out? I'm simply talking about how we lay sites out in CSS. As web developers, we've been doing it for ages now. However there have only been a few ways of doing it, up until now.
+		</footer>
 	</div></section>
 	<section class="slide cover shout w"><div>
 		<h2 style="background:#fff; line-height:1.2; opacity:0.8;">
 			Tables
 		</h2>
 		<img src="./images/tables.jpg">
+		<footer>
+			Of course, before CSS, before we had the power do everything we do today independent of markup, we laid our sites out with tables. How many people here have done that? I was fortunate enough to never have to do that professionally though. Except for HTML emails of course
+		</footer>
 	</div></section>
 	<section class="slide cover shout h"><div>
 		<img src="./images/bacon.jpg">
+		<footer>
+			You may be wondering why I'm showing this picture for HTML emails... I'm not entirely sure myself, but it came up in my Flickr search for the last picture of tables and I had to use it. Maybe writing HTML emails hypnotises us and regresses us to the past... much like bacon can. The important thing is that other than HTML emails, we have moved on from tables for layout.
+		</footer>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Modern CSS layout methods</h2>
 		<ul>
 			<li class="next">Floats</li>
 		</ul>
+		<footer>
+			So, if you were going to lay out a site today, what would be the first layout tool you'd reach for?
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -96,6 +115,10 @@
 			<img src="./images/fatcat.jpg" style="float:left; margin: 0 20px 10px 0; box-shadow: 0 0 10px rgba(0,0,0,0.8);">
 			<p style="line-height:1.5">All we really wanted to do with floats was have our text flow around images. Probably images of cats, since we're on the Internet. This cat, for example, is pretty fat. He looks lazy too, but he doesn't care. Being a cat is a good life if you can get it. Purrrrfect.</p>
 		</div>
+
+		<footer>
+			This is all that was ever intended for floats. And look how far they've come. Once we dropped tables for layout, floats became the defacto way to lay out a website, yet this was never their job. We've battled the various problems that using floats for this for years and we have solid ways of consistently clearing floats, containing floats, faking equal height columns. So I think we need a change. Let's look at some other layout methods.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -106,6 +129,9 @@
 			<li class="next">Flexbox</li>
 			<li class="next">Grids</li>
 		</ul>
+		<footer>
+			So what else can we use for layouts in the modern web? I see three other options. One you might recognise, two of which are a lot newer. Tables, Flexbox and Grids.
+		</footer>
 	</div></section>
 
 	<section class="slide cover shout w"><div>
@@ -113,18 +139,32 @@
 			Floats
 		</h2>
 		<img src="./images/float.jpg">
+		<footer>
+			As I said, floats are pretty well known by now but what I intend to do today is show you an example layout and how we would build that using different layout techniques. I thought I'd need something relatively familiar, so we can all start with something we know. So I picked a floated layout that you're probably aware of.
+		</footer>
 	</div></section>
 
 	<section class="slide cover h"><div>
 		<img src="./images/bootstrap.png">
+
+		<footer>
+			Bootstrap is a great example of one of those fancy grid based layouts that's fluid and responsive and fairly hard to do correctly first time.
+		</footer>
 	</div></section>
 
 	<section class="slide shout"><div>
-		<h2><a href="./examples/float.html">Demo</a></h2>
+		<h2>Demo</h2>
+		<footer>
+			Let's take a quick at that layout.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
 		<img src="./images/responsive.gif" class="place m">
+
+		<footer>
+			Yes, I realise what this looks like, but we can't get away from the fact that many sites need to be responsive these days, so these examples will show how our layouts will react to different screen sizes too, by changing the size of the browser.
+		</footer>
 	</div></section>
 
 	<section class="slide cover shout w"><div>
@@ -132,20 +172,35 @@
 			Tables
 		</h2>
 		<img src="./images/tables.jpg">
+		<footer>
+			I'm not suggesting we go back to the dark ages. Here, I'm actually talking about display:table.
+		</footer>
 	</div></section>
 
 	<section class="slide shout"><div>
 		<h2>
 			display:table
 		</h2>
+
+		<footer>
+			Display table gives us the ability to make our elements behave like tables. It was the dream of anyone who had grown up making layouts in tables.
+			You might now be wondering why I'm bringing this up, display:table was part of CSS 2 from back in 1998. Surely support is excellent?
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
 		<img src="./images/caniusetableshort.png" class="place m">
+		<footer>
+			Let's take a closer look
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
 		<img src="./images/caniusetablelong.png" class="place m">
+
+		<footer>
+			There we go, support is excellent, except for with the elephants of IE6 and 7 in the room. Since display:table was recommended and released, Internet Explorer was a thorn in the side of the developer that wanted to use it. But I would argue now, that if you do not need to support IE7, then display table is a viable way to lay your sites out now. So what can you do with it?
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -158,7 +213,8 @@ display:table-cell;
 	</div></section>
 
 	<section class="slide shout"><div>
-		<h2><a href="./examples/table.html">Demo</a></h2>
+		<h2>Demo</h2>
+		<footer>Let's see it in action</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -180,6 +236,9 @@ display:table-cell;
 			Flexbox
 		</h2>
 		<img src="./images/flex.jpg">
+		<footer>
+			Flexbox is one of the new and exciting layout methods afforded to us in CSS3. It is a model that has been planned to make laying things out on the web more natural and fitted to our needs better. It has been through lots of iterations and you will find that there are multiple implementations of it, but the w3c has settled on a standard now and browsers are starting to implement it now.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -188,6 +247,10 @@ display:table-cell;
 <pre><code>.container{</code>
 <code>	display:flex;</code>
 <code>}</code>
+
+		<footer>
+			So, all you have to do to trigger a flex box layout is call display flex on a containing element and the child elements will start to work as flex boxes. This, by default lays its children out left to right.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -198,6 +261,10 @@ display:table-cell;
 <code>	flex-direction:row / row-reverse /
 				   column / column-reverse;</code>
 <code>}</code>
+
+		<footer>
+			flex direction can change the default behaviour
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -208,6 +275,10 @@ display:table-cell;
 <code>	justify-content: flex-start / flex-end / center /
 					 space-around / space-between;</code>
 <code>}</code>
+
+		<footer>
+			justify content tells the browser how to position the items within the flex box
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -219,14 +290,24 @@ display:table-cell;
 					 baseline / stretch;</code>
 <code>}</code>
 
+		<footer>
+			align items is the same, but for the cross axis, stretch is useful as it makes horizontally laid out items stretch to the height of the box. no more faux columns!
+		</footer>
 	</div></section>
 
 	<section class="slide shout"><div>
-		<h2><a href="./examples/flex.html">Demo</a></h2>
+		<h2>Demo</h2>
+		<footer>
+			Let's see what we can do with that.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
 		<img src="./images/caniuseflex.png" class="place m">
+
+		<footer>
+			sadly not so well supported
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -236,6 +317,10 @@ display:table-cell;
 			<li><a href="http://dev.opera.com/articles/view/flexbox-basics/">Flexbox — fast track to layout nirvana?</a> &mdash; Chris Mills</li>
 			<li><a href="https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_flexible_boxes">Using CSS flexible boxes</a> &mdash; MDN</li>
 		</ul>
+
+		<footer>
+			sadly not so well supported
+		</footer>
 	</div></section>
 
 	<section class="slide cover shout w"><div>
@@ -243,10 +328,17 @@ display:table-cell;
 			Grids
 		</h2>
 		<img src="./images/grid.jpg">
+		<footer>
+			Grids are the new exciting layout method, created by Microsoft, and now picked up as a working draft by the w3c. Let's get the support question out of the way first.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
 		<img src="./images/caniusegrid.png" class="place m">
+
+		<footer>
+			so, yeah, only available, vendor prefixed, in IE10.
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -256,6 +348,10 @@ display:table-cell;
 <code>	display:grid;</code>
 <code>	grid-columns: 3fr 1fr;</code>
 <code>}</code>
+
+		<footer>
+
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -266,6 +362,9 @@ display:table-cell;
 <code>	grid-columns: (3fr 1fr)[11] 3fr;</code>
 <code>}</code>
 
+		<footer>
+
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -278,10 +377,16 @@ display:table-cell;
 <code>	grid-row-span: 3;</code>
 <code>}</code>
 
+		<footer>
+
+		</footer>
 	</div></section>
 
 	<section class="slide shout"><div>
-		<h2><a href="./examples/grid.html">Demo</a></h2>
+		<h2>Demo</h2>
+		<footer>
+
+		</footer>
 	</div></section>
 
 	<section class="slide"><div>
@@ -344,6 +449,7 @@ display:table-cell;
 		<h2 style="margin-top:300px; text-align:center;">Questions?</h2>
 	</div></section>
 
-	<script src="./shower/shower.js"></script>
+	<script src="../../shower.js"></script>
+	<!-- Copyright © 2010–2013 Vadim Makeev — pepelsbey.net -->
 </body>
 </html>
